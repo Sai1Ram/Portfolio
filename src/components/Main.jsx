@@ -50,17 +50,6 @@ function Main() {
           side={"right"}
           text={"Profile"}
         />
-        <div
-          className={`bottom col-span-3 flex justify-around items-center  text-black`}
-        >
-          <Heading
-            text={"About"}
-            cl={`${click ? "lg:text-white z-[1]" : ""}`}
-            click = {click}
-            link={"/about"}
-          />
-          <Heading text={"My Skills"} link={"/my-skills"}     click = {click}/>
-        </div>
       </div>
     </>
   );

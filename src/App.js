@@ -1,18 +1,16 @@
 import "./App.css";
 import { Route, Routes} from "react-router-dom";
 import Main from "./components/Main";
-import About from "./components/Profile";
 import MySkills from "./components/MySkills";
-import Blogs from "./components/Blogs";
 import Works from "./components/Works";
+import Profile from "./components/Profile";
 function App() {
   return (
     <>
       <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/profile" element={<About />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/my-skills" element={<MySkills />} />
-          <Route path="/blogs" element={<Blogs />} />
           <Route path="/works" element={<Works />} />
       </Routes>
     </>
