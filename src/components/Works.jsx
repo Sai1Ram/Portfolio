@@ -42,7 +42,6 @@ function Works() {
             className={`flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 justify-center items-center`}
           >
             <Nav text={"Profile"} link={"/profile"} />  
-            {/* <Nav text={"My Skills"} link={"/my-skills"} /> */}
           </nav>
         </div>
 
@@ -58,47 +57,27 @@ function Works() {
               text={data[0].text}
               image={data[0].images}
               link={data[0].link}
+              side={"left"}
             />
             <Blog
               text={data[0].text}
               image={data[0].images}
               link={data[0].link}
+              side={"right"}
             />
             <Blog
               text={data[0].text}
               image={data[0].images}
               link={data[0].link}
+              side={"left"}
             />
             <Blog
               text={data[0].text}
               image={data[0].images}
               link={data[0].link}
+              side={"right"}
             />
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
-            />
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
-            />
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
-            />
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
-            />
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
-            />
+
           </div>
         </div>
         <div className="right">

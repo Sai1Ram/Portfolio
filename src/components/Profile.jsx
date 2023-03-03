@@ -14,7 +14,9 @@ function Profile() {
       >
         <Brand />
         <SocialLinks color={"white"} />
-        <div className="border-2 border-white lg:w-[600px] top-[20%] left-[15%] md:w-[400px] w-[250px] lg:text-2xl md:text-xl text-sm fixed z-[-1] backdrop-blur-sm lg:p-10 md:p-8 p-4 lg:leading-10 italic md:font-bold leading-8 font-[Ubuntu]">
+        <motion.div className="border-2 border-white lg:w-[600px] top-[20%] left-[15%] md:w-[400px] w-[250px] lg:text-2xl md:text-xl text-sm fixed z-[-1] backdrop-blur-sm lg:p-10 md:p-8 p-4 lg:leading-10 italic md:font-bold leading-8 font-[Ubuntu]"         initial={{opacity: 0, scale: 0.5 }}
+        animate={{opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}>
           <p className="my-4">
             I'm a front-end developer located in India. I love to create simple
             yet beautiful websites with great user experience.
@@ -32,12 +34,12 @@ function Profile() {
           <button className="rounded-md shadow-md p-2 hover:shadow-inner shadow-white">
             Resume
           </button>
-        </div>
+        </motion.div>
           <motion.div
             className="absolute top-[2%] right-[5%] lg:right-[10%] transition-all duration-700 animate-[float_4s_2s_ease_infinite] w-[30%]"
             initial={{ y: "70%", x: "70%", scale: 0.2, opacity: 0 }}
             animate={{ y: 0, x: 0, scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeIn" }}
+            transition={{ duration: 1, ease: "easeOut" }}
             >
             <img src={image} alt="" />
           </motion.div>
