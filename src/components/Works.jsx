@@ -4,6 +4,7 @@ import Brand from "./Brand";
 import Nav from "./Nav";
 import SocialLinks from "./SocialLinks";
 import image1 from "../assets/Screenshot_20230130_115502.png";
+import image2 from "../assets/Screenshot_2023-03-07 115933.png"
 // import { Link, Anchor } from "../assets/AllSvg";
 function Works() {
 
@@ -13,8 +14,15 @@ function Works() {
   const data = [
     {
       images: image1,
-      text: "Sai Ram Senapati",
-      link: "https://splendorous-salamander-a99396.netlify.app/",
+      heading:"Food Shop",
+      text: "Welcome to our online food store! With our easy-to-use e-commerce website built with React JS, you can browse through a variety of delicious food options, add your favorites to your cart, and checkout seamlessly.",
+      link: "https://food-shop-web.netlify.app/",
+    },
+    {
+      images: image2,
+      heading:"GPT-3",
+      text: "Welcome to our website, where you can explore the exciting world of GPT-3 and Open AI! Our static website, built using React JS, provides you with a brief and informative introduction to these cutting-edge technologies.",
+      link: "https://gpt-3info.netlify.app/",
     },
   ];
   const images = {
@@ -56,13 +64,15 @@ function Works() {
             <Blog
               text={data[0].text}
               image={data[0].images}
+              heading={data[0].heading}
               link={data[0].link}
               side={"left"}
             />
             <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
+              heading={data[1].heading}
+              text={data[1].text}
+              image={data[1].images}
+              link={data[1].link}
               side={"right"}
             />
             <Blog

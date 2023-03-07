@@ -52,7 +52,7 @@ function SocialLinks({ click, color }) {
           className={`${click ? "lg:text-white z-[1]  " : ""}  ${
             color === "white" ? "text-white" : "text-black"
           } a-animate opacity-0`}
-          href="https://github.com/Sai1Ram"
+          href="https://www.instagram.com/__sai_ram_senapati/"
           target={"_blank"}
           rel="noreferrer"
           whileHover={{
@@ -69,7 +69,7 @@ function SocialLinks({ click, color }) {
           className={`${click ? "lg:text-white z-[1]  " : ""}  ${
             color === "white" ? "text-white" : "text-black"
           } a-animate opacity-0`}
-          href="https://github.com/Sai1Ram"
+          href="https://www.linkedin.com/in/sai1ram/"
           target={"_blank"}
           rel="noreferrer"
           whileHover={{
@@ -86,7 +86,7 @@ function SocialLinks({ click, color }) {
           className={`${click ? "lg:text-white z-[1]  " : ""}  ${
             color === "white" ? "text-white" : "text-black"
           } a-animate opacity-0`}
-          href="https://github.com/Sai1Ram"
+          href="https://twitter.com/SaiRam00223"
           target={"_blank"}
           rel="noreferrer"
           whileHover={{

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-function Blog({ text, image, link, side }) {
+function Blog({ heading, text, image, link, side }) {
   return (
     <>
       {}
@@ -20,10 +20,10 @@ function Blog({ text, image, link, side }) {
             className={`w-full h-[65%] group-hover:border-2 group-hover:border-white`}
           >
             <img src={image} alt="image1" className="w-full h-full" />
-          </div>:
+          </div>
           <div className={` h-[40%] pt-3 text-md sm:text-xl`}>
-            <h1>{text}</h1>
-            <h1>{text}</h1>
+            <h1 className="font-semibold">{heading}</h1>
+            <h3 className="text-base">{text}</h3>
           </div>
         </div>
       </motion.a>

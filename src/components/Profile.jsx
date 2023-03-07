@@ -14,35 +14,38 @@ function Profile() {
       >
         <Brand />
         <SocialLinks color={"white"} />
-        <motion.div className="border-2 border-white lg:w-[600px] top-[20%] left-[15%] md:w-[400px] w-[250px] lg:text-2xl md:text-xl text-sm fixed z-[-1] backdrop-blur-sm lg:p-10 md:p-8 p-4 lg:leading-10 italic md:font-bold leading-8 font-[Ubuntu]"         initial={{opacity: 0, scale: 0.5 }}
-        animate={{opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}>
-          <p className="my-4">
-            I'm a front-end developer located in India. I love to create simple
-            yet beautiful websites with great user experience.
+        <motion.div
+          className="border-2 border-white lg:w-[600px] top-[20%] left-[15%] md:w-[400px] w-[250px] lg:text-xl md:text-md text-xs fixed z-[-1] backdrop-blur-sm md:p-8 p-4 lg:leading-9 italic leading-6 font-[Ubuntu]"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <p className="">
+            Hello, I'm a Mechanical Engineering student at NIT Rourkela, with a
+            passion for exploring the world of front-end web development. I
+            enjoy experimenting with new technologies and building exciting
+            projects that showcase my skills. My favorite tools are React JS and
+            Tailwind CSS, which I use to create beautiful and responsive
+            websites. I'm also currently diving into the world of backend
+            development, learning about technologies like Node JS and Django to
+            expand my knowledge and skills. I believe everything is an Art when you put your consciousness in
+            it. You can connect with me via social links.
           </p>
-          <p className="my-4">
-            I'm interested in the whole frontend stack Like trying new things
-            and building great projects. I'm an independent freelancer and
-            blogger. I love to write blogs and read books.
-          </p>
-          <p className="my-4">
-            {/* I believe everything is an Art when you put your consciousness in
-            it. You can connect with me via social links. */}
+          <p className="lg:my-4">
             To know more about me check this
           </p>
           <button className="rounded-md shadow-md p-2 hover:shadow-inner shadow-white">
             Resume
           </button>
         </motion.div>
-          <motion.div
-            className="absolute top-[2%] right-[5%] lg:right-[10%] transition-all duration-700 animate-[float_4s_2s_ease_infinite] w-[30%]"
-            initial={{ y: "70%", x: "70%", scale: 0.2, opacity: 0 }}
-            animate={{ y: 0, x: 0, scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            >
-            <img src={image} alt="" />
-          </motion.div>
+        <motion.div
+          className="absolute top-[2%] right-[5%] lg:right-[10%] transition-all duration-700 animate-[float_4s_2s_ease_infinite] w-[30%]"
+          initial={{ y: "70%", x: "70%", scale: 0.2, opacity: 0 }}
+          animate={{ y: 0, x: 0, scale: 1, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+        >
+          <img src={image} alt="" />
+        </motion.div>
       </div>
     </>
   );
