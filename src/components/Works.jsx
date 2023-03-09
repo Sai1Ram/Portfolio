@@ -1,16 +1,17 @@
-import React, { useEffect} from "react";
+import React from "react";
+
+// import subComponets
 import Blog from "./Blog";
 import Brand from "./Brand";
 import Nav from "./Nav";
 import SocialLinks from "./SocialLinks";
+
+// import image files
 import image1 from "../assets/Screenshot_20230130_115502.png";
 import image2 from "../assets/Screenshot_2023-03-07 115933.png"
-// import { Link, Anchor } from "../assets/AllSvg";
 function Works() {
 
-  useEffect(() => {
 
-  }, []);
   const data = [
     {
       images: image1,

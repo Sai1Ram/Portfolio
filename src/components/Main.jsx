@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Brand from "./Brand";
 
-import Heading from "./Heading";
 import Intro from "./Intro";
 
 import Logo from "./Logo";
 import SideBar from "./SideBar";
+
+import { motion } from "framer-motion";
 function Main() {
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -24,11 +25,19 @@ function Main() {
         <div className={`top flex justify-between items-center col-span-3`}>
           <Brand click={click} />
           <div className="chat ">
-            <Heading
-              text={"Say hi.."}
-              cl={`${click ? "lg:text-black text-white z-[1]" : ""}`}
-              click = {click}
-            />
+            <a className="flex" href="mailto:sairamsenapati0022@gmail.com">
+              <motion.span
+                className={`font-[karla] text-xl font-semibold ${
+                  click ? "lg:text-black text-white z-[1]" : ""
+                }`}
+                whileHover={{
+                  scale: 1.1,
+                  textShadow: "0px 0px 4px gray",
+                }}
+              >
+                Say hi..
+              </motion.span>
+            </a>
           </div>
         </div>
         <SideBar
