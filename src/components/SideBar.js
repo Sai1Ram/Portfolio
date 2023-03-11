@@ -9,7 +9,7 @@ function SideBar({ rotate, click, side, text }) {
     <>
       <div className="left box-border">
         <div className={`w-[2rem] h-full relative `}>
-          <div
+          {/* <div
             className={`top1 overflow-hidden h-[50%] w-full absolute left-0 top-0 text-white ${
               click
                 ? "block lg:h-full animate-[visible_0.4s_1_0.5s_linear_forwards] opacity-0"
@@ -34,9 +34,9 @@ function SideBar({ rotate, click, side, text }) {
                 {text}
               </motion.span>
             </Link>
-          </div>
+          </div> */}
           <div
-            className={`bottom overflow-hidden ${
+            className={`bottom overflow-hidden text-white ${
               click
                 ? "h-[50%] top-[50%] lg:hidden animate-[visible_0.4s_1_0.5s_linear_forwards] opacity-0"
                 : "h-full top-0"
@@ -80,7 +80,7 @@ function SideBar({ rotate, click, side, text }) {
             )}
           </div>
         </div>
-        {side === "left" && <SocialLinks click={click} />}
+        {side === "left" && <SocialLinks click={click} color={"white"}/>}
       </div>
     </>
   );

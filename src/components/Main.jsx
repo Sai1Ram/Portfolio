@@ -7,6 +7,7 @@ import Logo from "./Logo";
 import SideBar from "./SideBar";
 
 import { motion } from "framer-motion";
+import ComputerCanvas from "./Computer";
 function Main() {
   const [click, setClick] = useState(false);
   const handleClick = () => {
@@ -15,7 +16,7 @@ function Main() {
   return (
     <>
       <div
-        className={` bg-white sm:p-6 p-4 grid grid-cols-[2rem_calc(100%-5rem)_2rem] grid-rows-[2.5rem_calc(100%-6rem)_2.5rem] gap-2 h-screen w-screen overflow-hidden box-border absolute top-0 left-0`}
+        className={` bg-[#050816] sm:p-6 p-4 grid grid-cols-[2rem_calc(100%-5rem)_2rem] grid-rows-[2.5rem_calc(100%-6rem)_2.5rem] gap-2 h-screen w-screen overflow-hidden box-border absolute top-0 left-0`}
       >
         <div
           className={`${
@@ -23,13 +24,14 @@ function Main() {
           } absolute top-0 left-0 bg-black transition-[height,_width] duration-[0.4s,_0.4s] ease-in delay-[0s,_0.4s] `}
         ></div>
         <div className={`top flex justify-between items-center col-span-3`}>
-          <Brand click={click} />
+          <Brand click={click} color={"white"} />
           <div className="chat ">
             <a className="flex" href="mailto:sairamsenapati0022@gmail.com">
-              <motion.span
-                className={`font-[karla] text-xl font-semibold ${
+            {/* ${
                   click ? "lg:text-black text-white z-[1]" : ""
-                }`}
+                } */}
+              <motion.span
+                className={`font-[karla] text-xl text-white font-semibold `}
                 whileHover={{
                   scale: 1.1,
                   textShadow: "0px 0px 4px gray",
@@ -43,6 +45,7 @@ function Main() {
         <SideBar
           rotate={"rotate-[-90deg]"}
           click={click}
+          
           side={"left"}
           text={"Works"}
         />
@@ -50,8 +53,9 @@ function Main() {
         <div
           className={`middle flex flex-col relative justify-center items-center `}
         >
-          <Logo click={click} onclick={handleClick} />
-          <Intro click={click} />
+          {/* <Logo click={click} onclick={handleClick} />
+          <Intro click={click} /> */}
+          <ComputerCanvas/>
         </div>
         <SideBar
           rotate={"rotate-[90deg]"}
