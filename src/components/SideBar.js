@@ -9,32 +9,6 @@ function SideBar({ rotate, click, side, text }) {
     <>
       <div className="left box-border">
         <div className={`w-[2rem] h-full relative `}>
-          {/* <div
-            className={`top1 overflow-hidden h-[50%] w-full absolute left-0 top-0 text-white ${
-              click
-                ? "block lg:h-full animate-[visible_0.4s_1_0.5s_linear_forwards] opacity-0"
-                : "hidden"
-            } ${side === "right" ? "lg:text-black" : ""}`}
-          >
-            <Link
-              className={`absolute ${
-                side === "right"
-                  ? "bottom-0 lg:bottom-[50%]"
-                  : "top-full lg:top-[50%]"
-              }  ${rotate} w-full text-center`}
-              to={"/" + text}
-            >
-              <motion.span
-                className={`font-[karla] text-[23px] font-semibold`}
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0px 0px 4px gray",
-                }}
-              >
-                {text}
-              </motion.span>
-            </Link>
-          </div> */}
           <div
             className={`bottom overflow-hidden text-white ${
               click

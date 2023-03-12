@@ -25,7 +25,7 @@ export default function Particle2() {
             options={{
                 background: {
                     color: {
-                        value: "#0000",
+                        value: "#050816",
                     },
                 },
                 fullScreen:{

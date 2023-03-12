@@ -24,7 +24,7 @@ function Profile() {
         <Brand />
         <SocialLinks color={"white"} />
         <motion.div
-          className="md:h-[331px] lg:h-[495px] h-[468px] lg:w-[600px] md:w-[400px] w-[250px] fixed top-[18%] left-[12%] [perspective:1000px]"
+          className="md:h-[331px] lg:h-[495px] h-[468px] lg:w-[600px] md:w-[400px] w-[250px] fixed top-[18%] left-[14%] [perspective:1000px]"
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}

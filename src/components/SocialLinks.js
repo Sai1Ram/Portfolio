@@ -28,7 +28,7 @@ function SocialLinks({ click, color }) {
   return (
     <>
       <div
-        className={`icons flex flex-col gap-2 items-center fixed bottom-0 h-[40%] left-6 sm:left-6`}
+        className={`icons flex flex-col gap-2 items-center fixed bottom-0 h-[40%] left-3 sm:left-6`}
       >
         <motion.a
           className={`${click ? "z-[1] lg:text-white " : ""}  ${

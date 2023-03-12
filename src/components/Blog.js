@@ -14,16 +14,16 @@ function Blog({ heading, text, image, link, side }) {
 
       >
         <div
-          className={` border-2 border-black transtion duration-300 group w-[100%] h-[35vh] md:h-[55vh] p-4 hover:bg-black hover:text-white text-black backdrop-blur-sm`}
+          className={` border-2 border-black transtion duration-300 group w-[100%] h-[45vh] md:h-[55vh] lg:p-4 sm:p-3 p-2 hover:bg-black hover:text-white text-black backdrop-blur-sm`}
         >
           <div
-            className={`w-full h-[65%] group-hover:border-2 group-hover:border-white`}
+            className={`w-full h-[55%] lg:h-[65%] group-hover:border-2 group-hover:border-white`}
           >
             <img src={image} alt="image1" className="w-full h-full" />
           </div>
-          <div className={` h-[40%] pt-3 text-md sm:text-xl`}>
-            <h1 className="font-semibold">{heading}</h1>
-            <h3 className="text-base">{text}</h3>
+          <div className={` h-[40%] lg:pt-3`}>
+            <h1 className="font-semibold text-sm sm:text-md lg:text-xl">{heading}</h1>
+            <h3 className="lg:text-base sm:text-sm text-xs md:text-md">{text}</h3>
           </div>
         </div>
       </motion.a>

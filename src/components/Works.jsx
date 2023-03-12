@@ -9,6 +9,7 @@ import SocialLinks from "./SocialLinks";
 // import image files
 import image1 from "../assets/Screenshot_20230130_115502.png";
 import image2 from "../assets/Screenshot_2023-03-07 115933.png"
+import image3 from "../assets/Screenshot_2023-03-11_172659.png"
 function Works() {
 
 
@@ -24,6 +25,12 @@ function Works() {
       heading:"GPT-3",
       text: "Welcome to our website, where you can explore the exciting world of GPT-3 and Open AI! Our static website, built using React JS, provides you with a brief and informative introduction to these cutting-edge technologies.",
       link: "https://gpt-3info.netlify.app/",
+    },
+    {
+      images: image3,
+      heading:"COSMOPOLITAN",
+      text: "Welcome to our website, where you can explore the exciting world of GPT-3 and Open AI! Our static website, built using React JS, provides you with a brief and informative introduction to these cutting-edge technologies.",
+      link: "https://frontend-ochre-phi.vercel.app",
     },
   ];
   const images = {
@@ -77,9 +84,10 @@ function Works() {
               side={"right"}
             />
             <Blog
-              text={data[0].text}
-              image={data[0].images}
-              link={data[0].link}
+            heading={data[2].heading}
+              text={data[2].text}
+              image={data[2].images}
+              link={data[2].link}
               side={"left"}
             />
             <Blog
