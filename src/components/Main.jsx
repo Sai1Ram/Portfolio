@@ -8,6 +8,7 @@ import ComputerCanvas from "./Computer";
 
 // image
 import profile from "../assets/profile_img.png";
+import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 function Main() {
   const images = [{
@@ -56,8 +57,8 @@ function Main() {
           >
             <div className="w-[130px] h-[130px] rounded-full border-2 border-green-500">
             <img src={profile} alt="" className="w-full h-full rounded-full"/></div>
-            <h1 className="text-gray-500 md:text-4xl text-lg">Hi, I'm <strong className="text-white">Sai Ram Senapati</strong> from India</h1>
-            <h1 className="text-white text-md md:text-2xl">Frontend Devloper</h1>
+            <h1 className="text-gray-500 md:text-4xl text-lg"><AnimatedTextCharacter text={"Hi, I'm Sai Ram Senapati from India"} name={true}/></h1>
+            <h1 className="text-gray-500 text-md md:text-2xl"><AnimatedTextCharacter text={"Front End Developer"} name={false}/></h1>
           </div>
           <ComputerCanvas/>
         </div>

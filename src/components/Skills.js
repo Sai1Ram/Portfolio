@@ -19,8 +19,8 @@ function Skills() {
       icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/reactjs_qxndia.png",
     },
     {
-      name: "Redux Toolkit",
-      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/redux_v4jg7b.png",
+      name: "PHP",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679651461/portfolio/kisspng-php-server-side-scripting-yii-web-application-scri-5b00d886698cb9.3580042815267820864324_toqlik.jpg",
     },
     {
       name: "Tailwind CSS",
