@@ -42,7 +42,7 @@ function Profile() {
                 <p >Mechanical Engineering<br/> National Institute of Technology, Rourkela (2021-2025)</p>
                 <strong>Technical Skills : </strong>
                 <Skills />
-                <a href="http://localhost:3000/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
+                <a href="sairamsenapati.onrender.com/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
               </p>
             </motion.div>
             <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
