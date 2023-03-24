@@ -1,21 +1,56 @@
-import React from 'react'
-import {BsStar, BsStarFill} from "react-icons/bs"
-import { motion } from 'framer-motion'
-function Skills({name, range, click}) {
-  // useEffect(()=>{},[])
+import React from "react";
+import BallCanvas from "./Ball";
+function Skills() {
+  const technologies = [
+    {
+      name: "HTML 5",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/html_dyrmws.png",
+    },
+    {
+      name: "CSS 3",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/css_je3kuc.png",
+    },
+    {
+      name: "JavaScript",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/javascript_fscw5i.png",
+    },
+    {
+      name: "React JS",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/reactjs_qxndia.png",
+    },
+    {
+      name: "Redux Toolkit",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/redux_v4jg7b.png",
+    },
+    {
+      name: "Tailwind CSS",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637151/portfolio/tailwind_axhorq.png",
+    },
+    {
+      name: "Node JS",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637151/portfolio/nodejs_vk2f3h.png",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637151/portfolio/mongodb_vkiokg.png",
+    },
+    {
+      name: "git",
+      icon: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1679637150/portfolio/git_khlotn.png",
+    },
+  ];
   return (
-    <div className='flex items-center justify-between relative'>
-      <div className="names mr-2">{name}</div>
-      <div className="flex absolute left-[70%] md:left-[80%] rotate-180">
-
-        {[...Array(5).keys()].map(x => ++x).map(()=>{return(<BsStar className='lg:text-[15px] text-[8px] ml-1'/>)})}
-        </div>
-        <motion.div className="flex absolute  rotate-180 left-[70%] md:left-[80%]">
-        {[...Array(range).keys()].map(x => ++x).map((v,i)=>{return(<BsStarFill className={`lg:text-[15px] text-[8px] ml-1 ${click ? `animate-[visible_5s_0s_1_linear_forwards] `:"" }ease-out tansition-all duration-500 opacity-0`}/>)})}
-
-        </motion.div>
+    <div className="w-full justify-center flex-wrap flex flex-row">
+      {technologies
+        .map((v, i) => {
+          return (
+            <div className=" md:w-20 md:h-20 w-10 h-10" key={i}>
+              <BallCanvas icon={technologies[i].icon} />
+            </div>
+          );
+        })}
     </div>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

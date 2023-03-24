@@ -20,7 +20,7 @@ function Computer() {
       <hemisphereLight intensity={0.15} groundColor='black'/>
       <pointLight  intensity={1} position={isMobile ? [0, 0.6, 0.5] :[0, 1.5, 1.7]}/>
       <spotLight intensity={1} penumbra={1} angle={0.12} position={[-20, 50, 10]} castShadow shadow-mapSize={1024}/>
-      <primitive object={computer.scene} scale={isMobile ? 0.45 : 0.95} position={isMobile ? [0, -1.2, -1.45] : [0, -2.6, -1.7]} rotation={[-0.01, -0.2, -0.1]}/>
+      <primitive object={computer.scene} scale={isMobile ? 0.45 : 1.25} position={isMobile ? [0, -1.2, -1.45] : [0, -2.6, -1.7]} rotation={[-0.01, -0.2, -0.1]}/>
     </mesh>
   )
 }

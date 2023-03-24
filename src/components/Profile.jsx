@@ -35,18 +35,15 @@ function Profile() {
               click ? "[transform:rotateY(180deg)]" : ""
             } transition-[transform] duration-[2000ms] ease-in-out`}
           >
-            <motion.div className="border-2  border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] [transform:rotateY(180deg)] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
-              <p className="">
+
+            <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] [transform:rotateY(180deg)] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
+              <p className="w-full">
                 <strong>Education : </strong>
                 <p >Mechanical Engineering<br/> National Institute of Technology, Rourkela (2021-2025)</p>
                 <strong>Technical Skills : </strong>
-                <Skills name={"JavaScript"} range={4} click={click}/>
-                <Skills name={"React Js"} range={3} click={click}/>
-                <Skills name={"Tailwind CSS"} range={4} click={click}/>
-                <Skills name={"Java"} range={2} click={click}/>
-                <Skills name={"Python"} range={2} click={click}/>
+                <Skills />
+                <a href="http://localhost:3000/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
               </p>
-
             </motion.div>
             <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
               <p className="">
