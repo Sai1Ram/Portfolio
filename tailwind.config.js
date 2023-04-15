@@ -34,11 +34,36 @@ module.exports = {
           "100%":{
             transform:"translateY(-10px)",
           }
-        }
+        }, 
+        loading:{
+          "0%":{
+            transform:"translateZ(-100px)",
+            width:"100%",
+            height:"100%"
+          },
+          "25%":{
+            transform:"translateZ(100px)",
+            width:"100%",
+            height:"100%"
+          },
+          "50%":{
+            transform:"translateZ(-100px)",
+            width:"35%",
+            height:"35%"
+          },
+          "75%":{
+            transform:"translateZ(100px)",
+            width:"35%",
+            height:"35%"
+          },
+          "100%":{
+            transform:"translateZ(-100px)",
+            width:"100%",
+            height:"100%"
+          },
+        },
       },
-      backgroundImage: {
-        'hero-pattern': "url('https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')",
-      }
+
     },
   },
   plugins: [require("tailwind-scrollbar")],

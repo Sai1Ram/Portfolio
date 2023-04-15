@@ -4,7 +4,6 @@ import Brand from "./Brand";
 import SideBar from "./SideBar";
 
 import { motion } from "framer-motion";
-import ComputerCanvas from "./Computer";
 
 // image
 import profile from "../assets/profile_img.png";
@@ -55,12 +54,11 @@ function Main() {
         >
           <div className="flex flex-col items-center "
           >
-            <div className="w-[130px] h-[130px] rounded-full border-2 border-green-500">
+            <div className="w-[130px] h-[130px] lg:w-[230px] lg:h-[230px] rounded-full border-2 border-green-500">
             <img src={profile} alt="" className="w-full h-full rounded-full"/></div>
-            <h1 className="text-gray-500 md:text-4xl text-lg"><AnimatedTextCharacter text={"Hi, I'm Sai Ram Senapati from India"} name={true}/></h1>
-            <h1 className="text-gray-500 text-md md:text-2xl"><AnimatedTextCharacter text={"Front End Developer"} name={false}/></h1>
+            <h1 className="text-gray-500 md:text-4xl text-lg lg:text-5xl"><AnimatedTextCharacter text={"Hi, I'm Sai Ram Senapati from India"} name={true}/></h1>
+            <h1 className="text-gray-500 text-md md:text-2xl lg:text-4xl"><AnimatedTextCharacter text={"Front End Developer"} name={false}/></h1>
           </div>
-          <ComputerCanvas/>
         </div>
         <SideBar
           rotate={"rotate-[90deg]"}

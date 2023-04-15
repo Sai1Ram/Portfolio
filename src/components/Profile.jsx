@@ -10,7 +10,6 @@ import image from "../assets/spaceman.png";
 
 // import framer motion
 import { motion } from "framer-motion";
-import Skills from "./Skills";
 import {FaArrowLeft, FaArrowRight} from "react-icons/fa";
 function Profile() {
   const [click, setClick] = useState(false);
@@ -45,7 +44,6 @@ function Profile() {
                 <strong>Education : </strong>
                 <p >Mechanical Engineering<br/> National Institute of Technology, Rourkela (2021-2025)</p>
                 <strong>Technical Skills : </strong>
-                <Skills />
                 <a href="https://sairamsenapati.onrender.com/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
               </p>
             </motion.div>
@@ -73,10 +71,10 @@ function Profile() {
           </div>
         </motion.div>
         <motion.div
-          className="absolute top-[2%] right-[5%] lg:right-[10%] transition-all duration-700 animate-[float_4s_2s_ease_infinite] w-[30%]"
+          className="absolute top-[2%] right-[5%] lg:right-[10%] transition-all duration-700 animate-[float_4s_1.2s_ease_infinite] w-[30%]"
           initial={{ y: "70%", x: "70%", scale: 0.2, opacity: 0 }}
           animate={{ y: 0, x: 0, scale: 1, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut" }}
+          transition={{ duration: 0.5, ease: "easeInOut" }}
         >
           <img src={image} alt="" />
         </motion.div>
