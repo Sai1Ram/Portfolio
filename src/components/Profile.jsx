@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Particle from "./Particle";
 import Brand from "./Brand";
 import SocialLinks from "./SocialLinks";
+import technologies from './data'
 
 // import images
 import image from "../assets/spaceman.png";
@@ -44,6 +45,9 @@ function Profile() {
                 <strong>Education : </strong>
                 <p >Mechanical Engineering<br/> National Institute of Technology, Rourkela (2021-2025)</p>
                 <strong>Technical Skills : </strong>
+                <div className="flex justify-center item-center md:gap-4 flex-wrap">
+                {technologies.map((value, index)=>{return(<div className="w-10" key={index}><img src={value.icon} alt="" className="w-full h-full"/></div>)})}
+                </div>
                 <a href="https://sairamsenapati.onrender.com/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
               </p>
             </motion.div>
