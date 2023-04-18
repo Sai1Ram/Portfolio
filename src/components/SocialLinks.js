@@ -52,7 +52,7 @@ function SocialLinks({ click, color }) {
           className={`${click ? "lg:text-white z-[1]  " : ""}  ${
             color === "white" ? "text-white" : "text-black"
           } a-animate opacity-0`}
-          href="https://www.instagram.com/__sai_ram_senapati/"
+          href="https://instagram.com/__sai_ram_senapati?igshid=ZDdkNTZiNTM="
           target={"_blank"}
           rel="noreferrer"
           whileHover={{
