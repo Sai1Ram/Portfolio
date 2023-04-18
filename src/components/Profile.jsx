@@ -48,7 +48,7 @@ function Profile() {
                 <div className="flex justify-center item-center md:gap-4 flex-wrap">
                 {technologies.map((value, index)=>{return(<div className="w-10" key={index}><img src={value.icon} alt="" className="w-full h-full"/></div>)})}
                 </div>
-                <a href="https://sairamsenapati.onrender.com/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
+                <a href="https://sairamsenapati.netlify.app/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
               </p>
             </motion.div>
             <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
