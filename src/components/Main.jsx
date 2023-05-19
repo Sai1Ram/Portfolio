@@ -17,7 +17,7 @@ function Main() {
     <>
       <div
         className={` bg-[#050816] sm:p-6 p-2 grid grid-cols-[2rem_calc(100%-5rem)_2rem] grid-rows-[2.5rem_calc(100%-6rem)_2.5rem] gap-2 h-screen w-screen overflow-hidden box-border absolute top-0 left-0`}
-        style={{background:`url(${images[0].src})`, backgroundPosition:"center"}}
+        
       >
 
         <div
