@@ -10,12 +10,7 @@ import profile from "../assets/profile_img.png";
 import AnimatedTextCharacter from "./AnimatedTextCharacter";
 
 function Main() {
-  const images = [
-    {
-      src: "https://raw.githubusercontent.com/adrianhajdin/project_3D_developer_portfolio/main/src/assets/herobg.png",
-    },
-    { src: "https://i.ibb.co/QJPV14F/profile-img.png" },
-  ];
+
   return (
     <>
       <div
