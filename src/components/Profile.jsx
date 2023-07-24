@@ -40,7 +40,7 @@ function Profile() {
             <span className="w-6 md:w-8 mb-2 rounded-full bg-transparent hover:scale-110 shadow-md shadow-gray-600 flex justify-center items-center md:h-8 h-6" onClick={handleClick}>
                 <FaArrowLeft />
               </span>
-              <p className="w-full">
+              <div className="w-full">
               
                 <strong>Education : </strong>
                 <p >Mechanical Engineering<br/> National Institute of Technology, Rourkela (2021-2025)</p>
@@ -49,7 +49,7 @@ function Profile() {
                 {technologies.map((value, index)=>{return(<div className="w-10" key={index}><img src={value.icon} alt="" className="w-full h-full"/></div>)})}
                 </div>
                 <a href="https://sairamsenapati.netlify.app/resume.pdf" className="hover:underline" download={"resume.pdf"}><strong>Resume</strong></a>
-              </p>
+              </div>
             </motion.div>
             <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
               <p className="">
