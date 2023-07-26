@@ -53,9 +53,9 @@ function Profile() {
             </motion.div>
             <motion.div className="border-2 border-white md:p-8 p-4 w-full  backdrop-blur-[5px] [backface-visibility:hidden] lg:leading-9 italic leading-6 font-[Ubuntu] text-xs lg:text-xl md:text-md absolute">
               <p className="">
-                Hello, I'm a Mechanical Engineering student at NIT Rourkela,
-                with a passion for exploring the world of front-end web
-                development. I enjoy experimenting with new technologies and
+                Hello, I'm a Mechanical Engineering student at <strong>NIT Rourkela</strong>,
+                with a passion for exploring the world of <strong>Full Stack Web
+                development</strong>. I enjoy experimenting with new technologies and
                 building exciting projects that showcase my skills. My favorite
                 tools are React JS and Tailwind CSS, which I use to create
                 beautiful and responsive websites. I'm also currently diving

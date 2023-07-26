@@ -10,7 +10,7 @@ const Main = lazy(()=> import("./components/Main"))
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
     <Suspense fallback={<Loader/>}>
 
       <Routes>
@@ -20,7 +20,7 @@ function App() {
           <Route path="/loader" element={<Loader />} />
       </Routes>
     </Suspense>
-    </>
+    </div>
   );
 }
 

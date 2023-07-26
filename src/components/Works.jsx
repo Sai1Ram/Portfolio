@@ -5,7 +5,7 @@ import Blog from "./Blog";
 import Brand from "./Brand";
 import Nav from "./Nav";
 import SocialLinks from "./SocialLinks";
-import {data} from "./data";
+import { data } from "./data";
 
 console.log(data);
 function Works() {
@@ -34,7 +34,7 @@ function Works() {
           <nav
             className={`flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 justify-center items-center`}
           >
-            <Nav text={"Profile"} link={"/profile"} />  
+            <Nav text={"Profile"} link={"/profile"} />
           </nav>
         </div>
 
@@ -46,38 +46,20 @@ function Works() {
           <div
             className={`md:w-[80%] w-[100%] grid gap-8 md:grid-cols-2 grid-cols-1`}
           >
-            <Blog
-              text={data[0].text}
-              image={data[0].images}
-              heading={data[0].heading}
-              link={data[0].link}
-              side={"left"}
+            {data.map((value,index)=>{
+              return(
+                <Blog
+              text={value.text}
+              image={value.images}
+              heading={value.heading}
+              link={value.link}
+              side={index % 2 === 0 ? "left" : "right"}
             />
-            <Blog
-              heading={data[1].heading}
-              text={data[1].text}
-              image={data[1].images}
-              link={data[1].link}
-              side={"right"}
-            />
-            <Blog
-            heading={data[2].heading}
-            text={data[2].text}
-            image={data[2].images}
-            link={data[2].link}
-            side={"left"}
-            />
-            <Blog
-            heading={data[3].heading}
-              text={data[3].text}
-              image={data[3].images}
-              link={data[3].link}
-              side={"right"}
-            />
-
+              )
+            })}
           </div>
         </div>
-        <div className="right">
+        <div className="right hidden">
 
         </div>
       </div>
