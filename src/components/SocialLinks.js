@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect } from "react";
-// import { Link } from "react-router-dom";
-import { FaInstagram, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
-function SocialLinks({ click, color }) {
+import { FiInstagram, FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
+function SocialLinks({ side }) {
   useEffect(() => {
     document
       .getElementsByClassName("a-animate")
@@ -24,87 +23,89 @@ function SocialLinks({ click, color }) {
       .getElementsByClassName("line")
       .item(0)
       .classList.add("animate-[length_0.5s_1_1.3s_linear_forwards]");
-  }, [click]);
+  }, []);
   return (
     <>
-      <div
-        className={`icons flex flex-col gap-2 items-center fixed bottom-0 h-[40%] left-3 sm:left-6`}
-      >
-        <motion.a
-          className={`${click ? "z-[1] lg:text-white " : ""}  ${
-            color === "white" ? "text-white" : "text-black"
-          } a-animate opacity-0`}
-          href="https://github.com/Sai1Ram"
-          target={"_blank"}
-          rel="noreferrer"
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 4px gray",
-          }}
+      {side === "left" && (
+        <div
+          className={`icons flex-col gap-7 items-center fixed bottom-0 h-[43%] left-12 lg:flex hidden`}
         >
-          <FaGithub
-            className="h-[20px] w-[20px] md:h-[30px] md:w-[30px]"
-            fill={"currentColor"}
-          />
-        </motion.a>
+          <motion.a
+            className={`text-lightSlate a-animate opacity-0`}
+            href="https://github.com/Sai1Ram"
+            target={"_blank"}
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
+          >
+            <FiGithub
+              className="h-[20px] w-[20px]"
+              // md:h-[30px] md:w-[30px]
+              // fill={"currentColor"}
+            />
+          </motion.a>
 
-        <motion.a
-          className={`${click ? "lg:text-white z-[1]  " : ""}  ${
-            color === "white" ? "text-white" : "text-black"
-          } a-animate opacity-0`}
-          href="https://instagram.com/__sai_ram_senapati?igshid=ZDdkNTZiNTM="
-          target={"_blank"}
-          rel="noreferrer"
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 4px gray",
-          }}
+          <motion.a
+            className={`text-lightSlate a-animate opacity-0`}
+            href="https://instagram.com/__sai_ram_senapati?igshid=ZDdkNTZiNTM="
+            target={"_blank"}
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
+          >
+            <FiInstagram
+              className="h-[20px] w-[20px]"
+              // md:h-[30px] md:w-[30px]
+              // fill={"currentColor"}
+            />
+          </motion.a>
+          <motion.a
+            className={`text-lightSlate a-animate opacity-0`}
+            href="https://www.linkedin.com/in/sai1ram/"
+            target={"_blank"}
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
+          >
+            <FiLinkedin
+              className="h-[20px] w-[20px]"
+              // md:h-[30px] md:w-[30px]
+              // fill={"currentColor"}
+            />
+          </motion.a>
+          <motion.a
+            className={`text-lightSlate a-animate opacity-0`}
+            href="https://twitter.com/SaiRam00223"
+            target={"_blank"}
+            rel="noreferrer"
+            whileHover={{
+              scale: 1.1,
+              textShadow: "0px 0px 4px gray",
+            }}
+          >
+            <FiTwitter
+              className="h-[20px] w-[20px] "
+              // md:h-[30px] md:w-[30px]
+              // fill={"currentColor"}
+            />
+          </motion.a>
+          <span className={`w-[2px]  bg-lightSlate  line `}></span>
+        </div>
+      )}
+      {side === "right" && (
+        <div
+          className={`flex-col items-center fixed bottom-0 h-[40%] right-12 w-4 lg:flex hidden`}
         >
-          <FaInstagram
-            className="h-[20px] w-[20px] md:h-[30px] md:w-[30px]"
-            fill={"currentColor"}
-          />
-        </motion.a>
-        <motion.a
-          className={`${click ? "lg:text-white z-[1]  " : ""}  ${
-            color === "white" ? "text-white" : "text-black"
-          } a-animate opacity-0`}
-          href="https://www.linkedin.com/in/sai1ram/"
-          target={"_blank"}
-          rel="noreferrer"
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 4px gray",
-          }}
-        >
-          <FaLinkedin
-            className="h-[20px] w-[20px] md:h-[30px] md:w-[30px]"
-            fill={"currentColor"}
-          />
-        </motion.a>
-        <motion.a
-          className={`${click ? "lg:text-white z-[1]  " : ""}  ${
-            color === "white" ? "text-white" : "text-black"
-          } a-animate opacity-0`}
-          href="https://twitter.com/SaiRam00223"
-          target={"_blank"}
-          rel="noreferrer"
-          whileHover={{
-            scale: 1.1,
-            textShadow: "0px 0px 4px gray",
-          }}
-        >
-          <FaTwitter
-            className="h-[20px] w-[20px] md:h-[30px] md:w-[30px]"
-            fill={"currentColor"}
-          />
-        </motion.a>
-        <span
-          className={`w-[2px]  ${click ? "z-[1] lg:bg-white" : "h-0"}  ${
-            color === "white" ? "bg-white" : "bg-black"
-          } line`}
-        ></span>
-      </div>
+          <a href="mailto:sairamsenapati0022@gmail.com" className="rotate-90 text-slate font-fontMono hover:text-textGreeen focus:text-textGreeen">sairamsenapati0022@gmail.com</a>
+          <span className={`w-[2px]  bg-lightSlate absolute bottom-0 h-[46%] `}></span>
+        </div>
+      )}
     </>
   );
 }

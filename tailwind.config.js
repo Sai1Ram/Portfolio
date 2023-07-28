@@ -63,7 +63,29 @@ module.exports = {
           },
         },
       },
-
+      colors: {
+        bgColor: 'var(--navy)',
+        lightSlate: 'var(--light-slate)',
+        lightestSlate: 'var(--lightest-slate)',
+        lightestNavy: 'var(--lightest-navy)',
+        lightNavy: 'var(--light-navy)',
+        slate: 'var(--slate)',
+        textGreeen: 'var(--green)',
+        layer: 'var(--green-tint)',
+        darkNavy: 'var(--dark-navy)',
+        navyShadow: 'var(--navy-shadow)'
+      },
+      fontFamily:{
+        fontMono: 'var(--font-mono)',
+        fontSans: 'var(--font-sans)'
+      },
+      
+      // fontSize:{
+      //   textMd: 'var(--fz-md)',
+      //   textLg: 'var(--fz-lg)',
+      //   textXl: 'var(--fz-xl)',
+      //   textXxl: 'var(--fz-xxl)',
+      // }
     },
   },
   plugins: [require("tailwind-scrollbar")],
