@@ -78,7 +78,7 @@ const technologies = [
       images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690387412/portfolio/Screenshot_2023-07-26_213300_mbotol.png",
       heading:"Crypto Tracker",
       text: "It is a website that gives all the live data like price, market cap, profit, loss, and changes with a graph view about the cryptocurrency. It is a learning-based project for me and I used Next JS, TypeScript, and Material UI for this project. A",
-      link: "https://www.multiethnicfest.com/",
+      link: "https://crypto-tracker-sai.vercel.app/",
     },
     {
       images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690387005/portfolio/Screenshot_20230130_115502_moww7f.png",
