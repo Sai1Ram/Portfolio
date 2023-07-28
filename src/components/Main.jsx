@@ -217,7 +217,7 @@ function Main() {
               Hi, my name is
             </motion.h4>
             <motion.h1
-              className="font-fontSans md:text-5xl lg-text-7xl text-3xl text-lightestSlate font-[600] md:mb-6 mb-2 "
+              className="font-fontSans md:text-5xl lg:text-7xl text-3xl text-lightestSlate font-[600] md:mb-6 mb-2 "
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 1 }}
