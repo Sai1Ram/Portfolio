@@ -42,10 +42,10 @@ const technologies = [
   export const data = [
     
     {
-      images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690387004/portfolio/Screenshot_2023-03-11_172659_tfqq55.png",
+      images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1705374629/portfolio/cosmopolitan_zit8j6.png",
       heading:"COSMOPOLITAN",
       text: "I contributed to the development of our institute's Multiethnic Fest website, primarily focusing on the frontend. During the project, I gained valuable insights and proficiency in Tailwind CSS, which has further improved my skills as a frontend developer.",
-      link: "https://www.multiethnicfest.com/events",
+      link: "https://www.multiethnicfest.com/",
       gitLink: "",
       skillUsed: [{
         name: "Next Js",
