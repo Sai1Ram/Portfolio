@@ -129,7 +129,23 @@ const Chat = () => {
     </>
   );
 };
-export { Crypto, EYantra, Cosmo, Chat, FoodShop, GPT };
+
+const DigITHack = () => {
+  return (
+    <>
+      <p className="md:block inline">
+      Developed a dynamic website for startup {UnderLineLink({name: "DigITHack", link: "https://www.digithack.in/"})}{" "}
+      </p>
+      <p className="md:block inline">
+      showcasing innovative design and functionality,{" "}
+      </p>
+      <p className="md:block inline">
+      highlighting expertise in frontend development
+      </p>
+    </>
+  );
+};  
+export { Crypto, EYantra, Cosmo, Chat, FoodShop, GPT, DigITHack };
 
 // • I especially worked on creating user-friendly website animations using
 // the mentioned tech stacks to enhance the overall user experience

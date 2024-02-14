@@ -1,5 +1,5 @@
 // import image files
-import {Crypto, EYantra, Cosmo, Chat, FoodShop, GPT} from "./projectDescription";
+import {Crypto, EYantra, Cosmo, DigITHack, FoodShop, GPT} from "./projectDescription";
 
 const technologies = [
     {
@@ -63,35 +63,52 @@ const technologies = [
     ],
     description: <Cosmo/>
     },
-    {
-      images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690388550/portfolio/Screenshot_2023-07-26_215149_xlukfi.png",
-      heading:"Quick Chat",
-      text: " Creating Quick Chat a real chat application using Node.js, Express.js, MongoDB, socket io, tailwind CSS, Redux, and React. Implementing one-to-one and group chat features for seamless communication. This project is helping me in learning and using socket io",
-      link: "https://quick-chat-sai.vercel.app/",
-      gitLink:"https://github.com/Sai1Ram/Chat-frontend",
-      skillUsed: [{
-        name: "React Js",
-        link: "https://react.dev/",
-      },
-      {
-        name: "Tailwind CSS",
-        link: "https://tailwindcss.com/",
-      },
-      {
-        name: "Node JS",
-        link: "https://nodejs.org/en",
-      },
-      {
-        name: "Express Js",
-        link: "https://expressjs.com/"
-      },
-      {
-        name: "Socket IO",
-        link: "https://socket.io/"
-      }
-    ],
-    description: <Chat/>
+    {  
+        images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1707889249/portfolio/Screenshot_2024-02-14_110835_esbm51.png",
+        heading:"DigIT-Hack",
+        text: "Creating Quick Chat a real chat application using Node.js, Express.js, MongoDB, socket io, tailwind CSS, Redux, and React. Implementing one-to-one and group chat features for seamless communication. This project is helping me in learning and using socket io",
+        link: "https://www.digithack.in/",
+        gitLink:"",
+        skillUsed: [{
+          name: "React Js",
+          link: "https://react.dev/",
+        },
+        {
+          name: "Tailwind CSS",
+          link: "https://tailwindcss.com/",
+        },
+      ],
+      description: <DigITHack/>
     },
+    // {
+      //   images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690388550/portfolio/Screenshot_2023-07-26_215149_xlukfi.png",
+      //   heading:"Quick Chat",
+      //   text: " Creating Quick Chat a real chat application using Node.js, Express.js, MongoDB, socket io, tailwind CSS, Redux, and React. Implementing one-to-one and group chat features for seamless communication. This project is helping me in learning and using socket io",
+      //   link: "https://quick-chat-sai.vercel.app/",
+      //   gitLink:"https://github.com/Sai1Ram/Chat-frontend",
+      //   skillUsed: [{
+      //     name: "React Js",
+      //     link: "https://react.dev/",
+      //   },
+      //   {
+      //     name: "Tailwind CSS",
+      //     link: "https://tailwindcss.com/",
+      //   },
+      //   {
+      //     name: "Node JS",
+      //     link: "https://nodejs.org/en",
+      //   },
+      //   {
+      //     name: "Express Js",
+      //     link: "https://expressjs.com/"
+      //   },
+      //   {
+      //     name: "Socket IO",
+      //     link: "https://socket.io/"
+      //   }
+      // ],
+      // description: <Chat/>
+    // },
     {
       images: "https://res.cloudinary.com/dtp5uqey3/image/upload/v1690387412/portfolio/Screenshot_2023-07-26_213300_mbotol.png",
       heading:"Crypto Tracker",
