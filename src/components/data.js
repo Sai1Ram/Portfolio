@@ -1,11 +1,8 @@
 // import image files
 import {
-  Crypto,
   EYantra,
   Cosmo,
   DigITHack,
-  FoodShop,
-  GPT,
   LiveCode,
 } from "./projectDescription";
 

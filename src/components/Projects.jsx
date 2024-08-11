@@ -164,9 +164,13 @@ const Projects = () => {
                     className="w-80 h-80 bg-lightNavy rounded-md px-4 py-6"
                   >
                     <div className="flex justify-between items-center h-12 ">
-                      <a href="">
-                        <CiFolderOn className="h-8 w-8 font-extrabold text-textGreeen" />
-                      </a>
+                      {value.link ? (
+                        <a href={value.link} target="_blank" rel="noreferrer">
+                          <CiFolderOn className="h-8 w-8 font-extrabold text-textGreeen" />
+                        </a>
+                      ) : (
+                        ""
+                      )}
 
                       <div className="flex gap-2">
                         {value.gitLink ? (
