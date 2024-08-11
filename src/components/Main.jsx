@@ -12,6 +12,9 @@ import ReusableAnimation from "./ReusableAnimation";
 import { FiInstagram, FiLinkedin, FiGithub, FiTwitter } from "react-icons/fi";
 
 function Main() {
+  console.log(
+        "CONTACT ME   ----------------------------------------        \   ^__^         \  (oo)\_______            (__)\       )\/\                ||----w |                ||     ||                   Hey there! I'm glad that you liked the site and want to see what's going on. Feel free to check out the repo at https://github.com/Sai1Ram/Portfolio. And don't forget to shoot me an email at sairamsenapati0022@gmail.com if you'd like me to do awesome work for your company!"
+  )
   const [hamburger, setHamburger] = useState(false);
   const navlinks = [
     { number: "01", title: "About", link: "#about" },
