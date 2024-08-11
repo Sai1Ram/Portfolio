@@ -2,8 +2,9 @@ import React from "react";
 import Heading from "./Heading";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import ReusableAnimation from "./ReusableAnimation";
-// import { useInView } from "react-intersection-observer";
-import { data } from "./data";
+import { CiFolderOn } from "react-icons/ci";
+import { data, projectData } from "./data";
+import { motion } from "framer-motion";
 
 export const UnderLineLink = (data) => {
   return (
@@ -22,7 +23,7 @@ export const UnderLineLink = (data) => {
 };
 
 const Projects = () => {
-  console.log(data);
+  const [expand, setExpand] = React.useState(false);
   return (
     <ReusableAnimation>
       <div className="w-full md:min-h-screen md:px-24 lg:px-56 px-6 h-full md:pb-0 flex flex-col">
@@ -36,7 +37,10 @@ const Projects = () => {
               <>
                 {index % 2 !== 0 ? (
                   <ReusableAnimation key={index}>
-                    <div className="h-[380px] grid grid-cols-12 mb-20" id="work">
+                    <div
+                      className="h-[380px] grid grid-cols-12 mb-20"
+                      id="work"
+                    >
                       <div className="right lg:col-start-1 lg:col-end-6 lg:flex col-start-1 col-end-13 row-start-1 row-end-2 grid flex-col items-start py-6 p-6 lg:px-0">
                         <h4 className="font-fontMono md:text-sm text-xs text-textGreeen ml-1">
                           Featured Project
@@ -45,62 +49,36 @@ const Projects = () => {
                           {value.heading}
                         </h2>
                         <div className="lg:bg-lightNavy h-36 lg:w-[500px] w-full rounded-lg relative right-0 z-20 text-slate lg:p-6 lg:text-start text-left lg:shadow-2xl md:text-base text-sm ">
-                          {/* <p className="md:block inline">
-                            Live{" "}
-                            <span className="text-textGreeen">
-                              Crypto Currency Tracker
-                            </span>{" "}
-                            website which gives Real-time
-                          </p>
-                          <p className="md:block inline">
-                            data like{" "}
-                            <span className="text-textGreeen">
-                              Price, Market Cap
-                            </span>
-                            ,and market information
-                          </p>
-                          <p className="md:block inline">
-                            in both{" "}
-                            <span className="text-textGreeen">USD and INR</span>{" "}
-                            using graphs and deployed
-                          </p>
-                          <p>
-                            on{" "}
-                            {UnderLineLink({
-                              name: "Vercel.com",
-                              link: "https://vercel.com/",
-                            })}{" "}
-                            for easy access.
-                          </p> */}
                           {value.description}
                         </div>
                         <ul className="skillUsed my-6 flex md:gap-5 flex-wrap gap-2 ">
-                       
-                          {value.skillUsed.map((v, i)=>{
-                            return(
-                              <li key={i}>
-                            {UnderLineLink(v)}
-                          </li>
-                            )
+                          {value.skillUsed.map((v, i) => {
+                            return <li key={i}>{UnderLineLink(v)}</li>;
                           })}
                         </ul>
                         <div className="flex justify-end gap-3 text-slate">
-                          {value.gitLink ? <a
-                            href={value.gitLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FiGithub className="h-[20px] w-[20px]" />
-                          </a> : ''}
-                          {value.link ? <a
-                            href={value.link}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FiExternalLink className="h-[20px] w-[20px]" />
-                          </a> : ''}
-                          
-                          
+                          {value.gitLink ? (
+                            <a
+                              href={value.gitLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FiGithub className="h-[20px] w-[20px]" />
+                            </a>
+                          ) : (
+                            ""
+                          )}
+                          {value.link ? (
+                            <a
+                              href={value.link}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FiExternalLink className="h-[20px] w-[20px]" />
+                            </a>
+                          ) : (
+                            ""
+                          )}
                         </div>
                       </div>
                       <div className="left lg:col-start-6 lg:col-end-13 row-span-full relative grid col-start-1 col-end-13 row-start-1 row-end-2 lg:opacity-100 opacity-10">
@@ -134,34 +112,36 @@ const Projects = () => {
                           {value.heading}
                         </h2>
                         <div className="lg:bg-lightNavy h-36 lg:w-[500px] w-full rounded-lg relative right-0 z-20 text-slate lg:p-6 lg:text-end text-left lg:shadow-2xl md:text-base text-sm ">
-                         
                           {value.description}
                         </div>
                         <ul className="skillUsed my-6 flex md:gap-5 flex-wrap gap-2 ">
-                        {value.skillUsed.map((v, i)=>{
-                            return(
-                              <li key={i}>
-                            {UnderLineLink(v)}
-                          </li>
-                            )
+                          {value.skillUsed.map((v, i) => {
+                            return <li key={i}>{UnderLineLink(v)}</li>;
                           })}
-                          
                         </ul>
                         <div className="flex justify-end gap-3 text-slate">
-                        {value.gitLink ? <a
-                            href={value.gitLink}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FiGithub className="h-[20px] w-[20px]" />
-                          </a> : ''}
-                          {value.link ? <a
-                            href={value.link}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <FiExternalLink className="h-[20px] w-[20px]" />
-                          </a> : ''}
+                          {value.gitLink ? (
+                            <a
+                              href={value.gitLink}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FiGithub className="h-[20px] w-[20px]" />
+                            </a>
+                          ) : (
+                            ""
+                          )}
+                          {value.link ? (
+                            <a
+                              href={value.link}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <FiExternalLink className="h-[20px] w-[20px]" />
+                            </a>
+                          ) : (
+                            ""
+                          )}
                         </div>
                       </div>
                     </div>
@@ -170,7 +150,81 @@ const Projects = () => {
               </>
             );
           })}
+        </div>
+        <div className="flex gap-4 flex-wrap justify-center items-center">
+          {projectData
+            .slice(0, !expand ? 6 : projectData.length)
+            .map((value, index) => {
+              return (
+                <ReusableAnimation key={index}>
+                  <motion.div
+                    initial={{ x: 0, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                    whileHover={{ x: 0, y: -10 }}
+                    className="w-80 h-80 bg-lightNavy rounded-md px-4 py-6"
+                  >
+                    <div className="flex justify-between items-center h-12 ">
+                      <a href="">
+                        <CiFolderOn className="h-8 w-8 font-extrabold text-textGreeen" />
+                      </a>
 
+                      <div className="flex gap-2">
+                        {value.gitLink ? (
+                          <a
+                            href={value.gitLink}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <FiGithub className="h-6 w-6 text-slate" />
+                          </a>
+                        ) : (
+                          ""
+                        )}
+                        {value.link ? (
+                          <a href={value.link} target="_blank" rel="noreferrer">
+                            <FiExternalLink className="h-6 w-6 text-slate" />
+                          </a>
+                        ) : (
+                          ""
+                        )}
+                      </div>
+                    </div>
+                    <div className="flex flex-col mt-2 h-48 ">
+                      <a href={value.link}>
+                        <h2 className="text-2xl hover:text-textGreeen text-lightestSlate">
+                          {value.heading}
+                        </h2>
+                      </a>
+                      <p className=" text-slate mt-2">{value.description}</p>
+                    </div>
+                    <ul className="flex gap-3 mt-2 items-center list-none">
+                      {value.skillUsed.map((v, i) => {
+                        return (
+                          <li key={i} className="text-xs">
+                            {UnderLineLink(v)}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </motion.div>
+                </ReusableAnimation>
+              );
+            })}
+          <div className="w-full flex justify-center">
+            <motion.div
+              className="md:w-44 md:h-20 w-20 h-8 flex justify-center items-center"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+            >
+              <button
+                className="border-textGreeen outline-none md:py-4 md:px-6 p-2 border-2 rounded-md font-fontMono hover:border-r-4 hover:border-b-4 bg-bgColor text-textGreeen"
+                onClick={() => setExpand((prev) => !prev)}
+              >
+                {expand ? "Show Less" : "Show More"}
+              </button>
+            </motion.div>
+          </div>
         </div>
       </div>
     </ReusableAnimation>

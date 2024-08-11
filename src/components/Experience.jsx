@@ -28,8 +28,11 @@ const Experience = () => {
 
   return (
     <ReusableAnimation delay={0.5} threshold={0.5}>
-      <div className="w-full md:px-24 lg:px-56 px-6 flex lg:mt-32 flex-col mb-10" id="experience">
-        <Heading headingData={{ number: "02", title: "Where I’ve Worked" }} />
+      <div
+        className="w-full md:px-24 lg:px-56 px-6 flex lg:mt-32 flex-col mb-10"
+        id="experience"
+      >
+        <Heading headingData={{number: "02", title: "Where I’ve Worked" }} />
         <div className="flex pt-10 gap-8 h-[500px] flex-col lg:flex-row">
           <div className="text-slate flex lg:flex-col lg:w-[25%] text-sm justify-start flex-row  w-full">
             <button
@@ -42,7 +45,7 @@ const Experience = () => {
                 setTab(1);
               }}
             >
-              e-Yantra (IITB)
+              NeoPhyte
             </button>
             <button
               className={`lg:w-44 w-full lg:px-6 px-2 py-3 ${
@@ -54,11 +57,11 @@ const Experience = () => {
                 setTab(2);
               }}
             >
-              NeoPhyte
+              e-Yantra (IITB)
             </button>
           </div>
           <div className="text-slate text-xs md:text-base">
-            {tabs === 1 && (
+            {tabs === 2 && (
               <div className="eyrc transition-all duration-300 ease-in-out md:w-2/3 w-full flex flex-col">
                 {ExperienceHeading({
                   message: "Summer Intern",
@@ -112,7 +115,7 @@ const Experience = () => {
                 </div>
               </div>
             )}
-            {tabs === 2 && (
+            {tabs === 1 && (
               <div className="transition-all duration-300 ease-in-out md:w-2/3 w-full flex flex-col">
                 {ExperienceHeading({
                   message: "Web Development Intern",
@@ -122,8 +125,33 @@ const Experience = () => {
                 <div className="flex gap-2 py-2">
                   <GiPlayButton className="text-textGreeen w-8 h-8" />
                   <p>
-                    As a Web Development Intern, I crafted stunning UIs and
-                    integrated APIs using technologies like{" "}
+                    As a software development intern, I contributed to both
+                    front-end and back-end development, creating models,
+                    schemas, and APIs with{" "}
+                    {UnderLineLink({
+                      name: "Node.js",
+                      link: "https://nodejs.org/en",
+                    })}
+                    ,{" "}
+                    {UnderLineLink({
+                      name: "Express.js",
+                      link: "https://expressjs.com/",
+                    })}
+                    ,{" "}
+                    {UnderLineLink({
+                      name: "MongoDB",
+                      link: "https://www.mongodb.com/",
+                    })}
+                    , I focused on leveraging MongoDB's aggregation pipeline to
+                    enhance data handling.
+                  </p>
+                </div>
+
+                <div className="flex gap-2 py-4">
+                  <GiPlayButton className="text-textGreeen w-8 h-8" />
+                  <p>
+                    On the front end, I developed engaging user experiences
+                    using{" "}
                     {UnderLineLink({
                       name: "React",
                       link: "https://react.dev/",
@@ -143,17 +171,8 @@ const Experience = () => {
                       name: "Material UI",
                       link: "https://mui.com/",
                     })}
-                    , resulting in eye-catching websites.
-                  </p>
-                </div>
-
-                <div className="flex gap-2 py-4">
-                  <GiPlayButton className="text-textGreeen w-8 h-8" />
-                  <p>
-                    Developed user-friendly features <span className="text-textGreeen">(search, addition, updates) </span>
-                    for a responsive, dynamic company website. Emphasized
-                    reusable components and thorough documentation for easy
-                    maintenance.
+                    . I ensured seamless integration between the frontend and
+                    backend through effective cross-functional collaboration.
                   </p>
                 </div>
               </div>

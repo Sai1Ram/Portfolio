@@ -23,7 +23,7 @@ function Main() {
     <>
       <ReusableAnimation>
         <div
-          className={`bg-bgColor min-h-screen gap-2 w-screen overflow-x-hidden relative`}
+          className={`bg-bgColor min-h-screen gap-2 w-screen overflow-x-hidden`}
           style={{ overflow: "hidden !important" }}
         >
           <Headroom
