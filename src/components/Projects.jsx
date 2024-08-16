@@ -214,9 +214,9 @@ const Projects = () => {
                 </ReusableAnimation>
               );
             })}
-          <div className="w-full flex justify-center">
-            <motion.div
-              className="md:w-44 md:h-20 w-20 h-8 flex justify-center items-center"
+        </div>
+        <motion.div
+              className="md:w-44 md:h-20 w-32 h-8 flex justify-center items-center mx-auto my-4"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.8 }}
@@ -228,8 +228,6 @@ const Projects = () => {
                 {expand ? "Show Less" : "Show More"}
               </button>
             </motion.div>
-          </div>
-        </div>
       </div>
     </ReusableAnimation>
   );
